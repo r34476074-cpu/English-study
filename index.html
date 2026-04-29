@@ -1,18 +1,20 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
-    <title>My Secret Game</title>
+    <title>My Game Collection</title>
+    <style>
+        body { margin: 0; display: flex; flex-direction: column; align-items: center; background: #222; color: white; font-family: sans-serif; }
+        iframe { border: none; width: 100%; height: 90vh; }
+        .header { padding: 10px; }
+    </style>
 </head>
 <body>
-    <h1 id="game-title">The Secret Game</h1>
-    <div id="game-output">Loading...</div>
+    <div class="header">
+        <h1>Playing on Poki</h1>
+    </div>
+    
+    <!-- Replace the URL below with the link to the specific Poki game you want -->
+    <iframe src="https://poki.com" allowfullscreen></iframe>
 
-    <script>
-        // This is where your game logic (like ctr) goes!
-        let ctr = 0; 
-        
-        // Example logic:
-        document.getElementById("game-output").innerHTML = "Score: " + ctr;
-    </script>
 </body>
 </html>
